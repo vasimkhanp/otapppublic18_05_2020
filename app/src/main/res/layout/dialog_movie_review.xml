@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black_hex_22">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lnrContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_30sdp"
+            android:background="@drawable/bg_round_rectangle_white_small"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_cancel"
+                android:backgroundTint="@color/blue_movie" />
+
+            <TextView
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_movie"
+                android:textColor="@color/gray_39"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_68sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_rate_shine" />
+
+            <TextView
+                android:id="@+id/tvRatePercentage"
+                style="@style/FontOpenSansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="0%"
+                android:textColor="@color/gray_0d"
+                android:textSize="@dimen/_20sdp" />
+
+            <RatingBar
+                android:id="@+id/rvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/rating" />
+
+            <View
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="1px"
+                android:background="@color/gray_c2" />
+
+            <TextView
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:text="@string/write_movie"
+                android:textColor="@color/dudhiya_review"
+                android:textSize="@dimen/_14sdp" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/review_title"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/gray_90"
+                android:textSize="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="1dp"
+                android:background="@color/gray_c2" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@null"
+                android:hint="@string/description"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/gray_90"
+                android:textSize="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="1dp"
+                android:background="@color/gray_c2" />
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_rounded_rectangle_strip"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

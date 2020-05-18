@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f3">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f3"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FontOpenSansLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/my_booking"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25sdp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tlSlidingTabs"
+                style="@style/MyCustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                app:tabBackground="@color/transparent"
+                app:tabIndicatorColor="@color/yellow_indicator"
+                app:tabIndicatorHeight="@dimen/_4sdp"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/MyTripTabTextAppearance" />
+
+        </LinearLayout>
+
+
+        <com.otapp.net.view.NonSwipeableViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:padding="@dimen/_5sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f3"
+        android:padding="@dimen/_20sdp"
+        android:gravity="center">
+
+       <!-- <TextView
+            style="@style/FontOpenSansRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_need_login"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center"
+            android:textColor="@color/gray_25"/>-->
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_app_launch"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

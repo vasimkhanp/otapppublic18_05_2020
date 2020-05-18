@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BubbleLayout">
+        <attr name="lookAt">
+            <enum name="left"   value="1"/>
+            <enum name="top"    value="2"/>
+            <enum name="right"  value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+
+        <attr name="lookPosition" format="dimension"/>
+        <attr name="lookWidth"    format="dimension"/>
+        <attr name="lookLength"   format="dimension"/>
+        <attr name="bubbleColor"  format="color"/>
+        <attr name="bubbleRadius" format="dimension"/>
+        <attr name="bubblePadding" format="dimension"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="shadowX"      format="dimension"/>
+        <attr name="shadowY"      format="dimension"/>
+        <attr name="shadowColor"  format="color"/>
+    </declare-styleable>
+
+    <!-- Range Seekbar -->
+    <declare-styleable name="CrystalRangeSeekbar" >
+        <attr name="corner_radius" />
+        <attr name="min_value" />
+        <attr name="max_value" />
+        <attr name="min_start_value" />
+        <attr name="max_start_value" />
+        <attr name="steps" />
+        <attr name="gap" />
+        <attr name="fix_gap" />
+        <attr name="bar_height"/>
+        <attr name="bar_color_mode" />
+        <attr name="bar_color" />
+        <attr name="bar_gradient_start" />
+        <attr name="bar_gradient_end" />
+        <attr name="bar_highlight_color_mode" />
+        <attr name="bar_highlight_color" />
+        <attr name="bar_highlight_gradient_start" />
+        <attr name="bar_highlight_gradient_end" />
+        <attr name="thumb_diameter" />
+        <attr name="position" />
+        <attr name="data_type" />
+        <attr name="left_thumb_color" format="color" />
+        <attr name="left_thumb_color_pressed" format="color" />
+        <attr name="left_thumb_image" format="reference" />
+        <attr name="left_thumb_image_pressed" format="reference" />
+        <attr name="right_thumb_color" format="color" />
+        <attr name="right_thumb_color_pressed" format="color" />
+        <attr name="right_thumb_image" format="reference" />
+        <attr name="right_thumb_image_pressed" format="reference" />
+        <attr name="seek_bar_touch_enabled" />
+    </declare-styleable>
+
+    <declare-styleable name="SlyCalendarView">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="headerColor" format="color"/>
+        <attr name="headerTextColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="selectedColor" format="color"/>
+        <attr name="selectedTextColor" format="color"/>
+        <attr name="firstMonday" format="boolean"/>
+    </declare-styleable>
+
+</resources>

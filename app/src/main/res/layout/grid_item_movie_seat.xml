@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.otapp.net.view.SquareLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_status_available"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.otapp.net.view.SquareTextView
+        android:id="@+id/tvSeatImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_movie_seat_available"
+        android:minWidth="@dimen/_30sdp"
+        android:minHeight="@dimen/_30sdp"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvSeat"
+        style="@style/FontLatoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="A1"
+        android:padding="@dimen/_1sdp"
+        android:singleLine="true"
+        android:textColor="@color/gray_93"
+        android:textSize="@dimen/_10sdp" />
+
+</com.otapp.net.view.SquareLinearLayout>

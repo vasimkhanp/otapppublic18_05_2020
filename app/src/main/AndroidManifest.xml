@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.otapp.net">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.Otapp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="false"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:supportsRtl">
+        <activity android:name=".Bus.Activity.BookingReserveActivity"></activity>
+        <activity android:name=".home.fragment.MyBookingsThemeParkSuccessDetails" />
+        <activity android:name=".home.fragment.MyBookingMoviesDetails" />
+        <activity android:name=".home.fragment.MyBookingEventDetails" />
+        <activity android:name=".home.fragment.MyBookingTicketDetails" />
+        <activity android:name=".FlightsFilters" /> <!-- <meta-data -->
+        <!-- tools:replace="android:value" -->
+        <!-- android:name="android.support.VERSION" -->
+        <!-- android:value="28.0.0" /> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".FilterBusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlightFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterTermsActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CouponCodeActivity"
+            android:screenOrientation="portrait" /> <!-- android:theme="@android:style/Theme.Dialog" -->
+        <activity
+            android:name=".TrailerPlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- //facebook -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity> <!-- uCrop cropping activity -->
+        <activity
+            android:name=".ImagePickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- <activity android:name=".Events.Activity.TicketSuccessResponseActivity"/> -->
+        <activity android:name=".Events.Activity.TicketSuccessResponseActivity" />
+        <activity android:name=".Events.Activity.EventPaymentProcessingActivity" />
+        <activity android:name=".Events.Activity.EventPaymentActivity" />
+        <activity android:name=".PromoCode.Activity.PromoCodeActivity" />
+        <activity android:name=".Events.Activity.EventOrderPreview" />
+        <activity android:name=".Events.Activity.EventDetailsActivity" />
+        <activity android:name=".Events.Activity.EventsActivity" />
+        <activity android:name=".Bus.Activity.BusDetailsActivity" />
+        <activity android:name=".Bus.Activity.BusBookingActivity" />
+        <activity android:name=".Bus.Activity.PassengerTicketDetails" />
+        <activity android:name=".Bus.Activity.PassengerDetailsActivity" />
+        <activity android:name=".Bus.Activity.ReturnBusActivity" />
+        <activity android:name=".Bus.Activity.DroppingPointActivity" />
+        <activity android:name=".Bus.Activity.BoardingPointActivity" />
+        <activity android:name=".Bus.Activity.SeatSelectionActivity" />
+        <activity android:name=".Bus.Activity.SelectBusActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+    </application>
+
+</manifest>

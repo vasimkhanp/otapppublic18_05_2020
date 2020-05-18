@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:background="@drawable/bg_flight_behind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnrTopTab" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/bg_round_border_gray_bf"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:background="@drawable/bg_round_rectangle_gray_f1">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tlSlidingTabs"
+                        style="@style/MyCustomTabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        app:tabBackground="@drawable/tab_flight_selector"
+                        app:tabIndicatorColor="@color/transparent"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabMinWidth="@dimen/_50sdp"
+                        app:tabMode="fixed"
+                        app:tabPaddingEnd="@dimen/_10sdp"
+                        app:tabPaddingStart="@dimen/_10sdp"
+                        app:tabRippleColor="@null"
+                        app:tabSelectedTextColor="@color/white"
+                        app:tabTextAppearance="@style/MyFlightkTabTextAppearance" />
+
+                </FrameLayout>
+
+                <com.otapp.net.view.NonSwipeableViewPager
+                    android:id="@+id/mViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:overScrollMode="never" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltBus"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_alignTop="@+id/mCardView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_minus30sdp"
+                android:background="@drawable/bg_circle_white"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/FontOpenSansSemiBold"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_flight_top"
+                    android:backgroundTint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@drawable/bg_app_launch" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

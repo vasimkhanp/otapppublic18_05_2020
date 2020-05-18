@@ -1,0 +1,762 @@
+<resources>
+    <string name="app_name">Otapp</string>
+
+
+    <string name="welcom">Welcome to otapp</string>
+    <string name="or_continue_with">OR Continue With:</string>
+    <string name="thanks">Thanks, we just need a few more details to create your OTAPP account.</string>
+    <string name="please_login">Please Login/Sign Up using your E-mail to continue.</string>
+    <string name="you_agree">By proceeding you agree with our Terms of Service &amp; Privacy Policy</string>
+
+    <string name="select_time_option">Select Time Option For This Trip</string>
+
+    <string name="already_member">Already a member? Login Here</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="forgot_your_password">Forgot Your Password?</string>
+    <string name="new_register">New Here? Register</string>
+
+    <string name="emailId">Email ID</string>
+    <string name="password">Password</string>
+    <string name="emailId_Mobile_number">Email ID/Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="create_password">Create Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="register">Register</string>
+    <string name="login">Log In</string>
+    <string name="send">Send</string>
+    <string name="save">Save</string>
+    <string name="txt_continue">Continue</string>
+    <string name="book_now">Book Now</string>
+
+
+    <string name="home">Home</string>
+    <string name="my_booking">My Booking</string>
+    <string name="profile">My Account</string>
+    <string name="settings">Settings</string>
+
+    <string name="bus">Bus</string>
+    <string name="flight">Flights</string>
+    <string name="hotel">Hotels</string>
+    <string name="movie">Movie</string>
+    <string name="event">Events/Clubs</string>
+    <string name="ferry">Ferry</string>
+    <string name="theme_park">ThemePark</string>
+    <string name="tours">Tours</string>
+    <string name="visit">Visit</string>
+    <string name="coming_soon_park">Coming Soon</string>
+    <string name="please">Please</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="verification">Verification</string>
+    <string name="additinal_verification_required">Additional verification required</string>
+    <string name="verify">Verify</string>
+
+    <string name="perfect_holidays">Perfect Holidays</string>
+    <string name="breathtaking_cities">Breathtaking Cities</string>
+
+    <string name="add_city">Add City</string>
+    <string name="all">All</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="departure">Departure</string>
+    <string name="arrival">Arrival</string>
+    <string name="travellers">Travellers</string>
+    <string name="clas">Class</string>
+    <string name="currency_title">Currency</string>
+    <string name="search_buses">Search Buses</string>
+    <string name="search_flight">Search Flights</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="offers_deals">Offers &amp; Deals</string>
+    <string name="why_book">Why book with OTAPP?</string>
+
+    <string name="filter">Filter</string>
+    <string name="time">Time</string>
+    <string name="ac">AC</string>
+    <string name="seating">Seating</string>
+    <string name="sort">Sort</string>
+
+    <string name="filter_preferences">Filter Preferences</string>
+    <string name="time_preferences">Time Preferences</string>
+    <string name="seating_preferences">Seating Preferences</string>
+    <string name="sort_preferences">Sort Preferences</string>
+    <string name="bus_preferences">Bus Preferences</string>
+
+    <string name="ac_seater">Ac Seater</string>
+    <string name="ac_sleeper">Ac Sleeper</string>
+    <string name="non_ac_seater">Non Ac Seater</string>
+    <string name="non_ac_sleeper">Non Ac Sleeper</string>
+
+    <string name="fastest">Fastest</string>
+    <string name="cheapest">Cheapest</string>
+    <string name="earliest">Earliest</string>
+
+
+    <string name="apply_filters">Apply Filters</string>
+    <string name="select_bus_agent">Select Bus Traveller Agent</string>
+    <string name="select_pickup_point">Select Pickup Point</string>
+    <string name="select_drop_point">Select Drop Point</string>
+    <string name="bus_operator">Operator Preference</string>
+
+    <string name="price">Price</string>
+    <string name="price_colon">Price:</string>
+
+    <string name="select_floor">Select Floor</string>
+    <string name="select_seat">Select Seat</string>
+    <string name="select_bus_stop">Select Bus Stop</string>
+    <string name="booked">Booked</string>
+    <string name="sold_out">Sold Out</string>
+    <string name="selected">Selected</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="seat_no">Seat No</string>
+    <string name="seat">Seat</string>
+    <string name="seats_bracket">Seat(s)</string>
+    <string name="total">Total</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="book">Book</string>
+    <string name="boarding_point">Boarding Point</string>
+    <string name="droping_point">Dropping Point</string>
+
+    <string name="general_details">General Details</string>
+    <string name="gender">Gender</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="can_not_change">can not be changed</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_trips">My Trips</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="my_tickets">My Tickets</string>
+    <string name="my_saved_cards">My Saved Cards</string>
+    <string name="my_purchase">My Purchase</string>
+    <string name="change_country">Change Country</string>
+    <string name="like_us">Like Us</string>
+    <string name="likes">Likes</string>
+    <string name="like">Like</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="notifications">Notifications</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="logout">Logout</string>
+
+    <string name="traveller_details">Traveller Details</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name_optional">Middle Name (Optional)</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="dob_optional">Date of Birth (Optional)</string>
+    <string name="age">Age</string>
+    <string name="id_card">ID Card</string>
+    <string name="id_number">ID Number</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="proceed_payment">Proceed to Pay</string>
+
+    <string name="payment">Payment</string>
+    <string name="apply">Apply</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="internet_handling">Internet handling fees</string>
+    <string name="taxes">Taxes</string>
+    <string name="apply_counpon">Apply Coupon</string>
+    <string name="apply_counpon_code">Apply Coupon Code</string>
+    <string name="apply_promo_code">Apply Promo Code</string>
+    <string name="select_payment_code">Select Payment Code</string>
+    <string name="select_payment_mode">Select Payment Mode</string>
+    <string name="debit_credit_card">Debit Credit Card</string>
+    <string name="tigo_pesa">Tigo Pesa</string>
+
+    <string name="airtel_money">Airtel Money</string>
+    <string name="amount_payable">Amount payable</string>
+
+
+    <string name="select_date_time">Select Date &amp; Time</string>
+    <string name="park">Park</string>
+    <string name="date">Date</string>
+    <string name="onwards">onwards</string>
+    <string name="proceed">Proceed</string>
+    <string name="in_process">In process</string>
+    <string name="ticket">Ticket</string>
+    <string name="oops">Oops!</string>
+    <string name="all_cities">All Cities</string>
+    <string name="hint_search_park">Search Water / Theme Park</string>
+    <string name="hint_search_movie">Search for Movies &amp; Cinemas</string>
+    <string name="no_event">It seems no events happening currently, please try another day.</string>
+    <string name="even_better">Even better, why not try our Themepark or Movies</string>
+    <string name="login_retrive_details">Log-in to retrieve passenger details</string>
+    <string name="use_my_details">Use my details as passenger</string>
+
+    <string name="payment_successful">Payment Successful!</string>
+    <string name="payment_recieved">Thank you! Your payment of %s has been received</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="name">Name</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="transaction_ID">Transaction ID</string>
+    <string name="go_to_homepage">GO TO HOMEPAGE</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="currency">Rs</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="now_showing">Now Showing</string>
+    <string name="upcoming">Upcoming</string>
+
+    <string name="select_your_category">Select your category</string>
+    <string name="pay">Pay</string>
+    <string name="order_preview">Order Preview</string>
+    <string name="almost_there">Almost there</string>
+
+    <string name="synopsis_information">SYNOPSIS AND INFORMATION</string>
+    <string name="director">Director :</string>
+    <string name="cast_crew">Cast and Crew :</string>
+    <string name="synopsis">Synopsis :</string>
+    <string name="reviews">Reviews</string>
+    <string name="rate_it">Rate It</string>
+    <string name="users_reviews">Users Reviews</string>
+    <string name="critics_reviews">Critics Reviews</string>
+    <string name="view_all">View all</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="recomended_movie">Recommended Movies</string>
+    <string name="selected_seat">Selected Seat</string>
+
+    <string name="dd_glasses">3D Glasses</string>
+    <string name="food_beverage">Food &amp; Beverage</string>
+    <string name="food_beverage_summary">Food and Beverage Summary</string>
+    <string name="skip">Skip</string>
+    <string name="skip_continue">Skip &amp; Continue</string>
+    <string name="contin">Continue</string>
+    <string name="qty">Qty</string>
+    <string name="modify">Modify</string>
+    <string name="confirm">Confirm</string>
+    <string name="rate_the_movie">Rate the Movie</string>
+    <string name="mticket">M-Tickets</string>
+    <string name="class_seat">Class &amp; Seat</string>
+    <string name="screen_name">Screen Name</string>
+
+    <string name="how_movie">How was the Movie?</string>
+    <string name="write_movie">Write a Review</string>
+    <string name="review_title">Review Title</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
+    <string name="okay">Okay</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="all_eyes">All eyes this way</string>
+
+    <string name="select_total_seat">Select total number of ticket</string>
+    <string name="how_many_seat">How Many Seats?</string>
+
+
+    <string name="booking_preview">Booking Preview</string>
+    <string name="booking_review">Booking Review</string>
+    <string name="screen">Screen:</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="offer_vouchers">Apply Offers, Vouchers &amp; Gift Card</string>
+    <string name="offer_giftcard">Offers, Vouchers &amp; Gift Card</string>
+    <string name="seat_payment_details">Seat &amp; Payment Details</string>
+    <string name="seat_title">Seat:</string>
+    <string name="voucher_coupons">Vouchers/Coupons</string>
+    <string name="voucher_coupons_code">Vouchers/Coupons Code</string>
+    <string name="gift_card">Gift Card</string>
+    <string name="offers">Offers</string>
+    <string name="ticket_price_title">Ticket Price:</string>
+    <string name="glasses_price_title">3D Glasses Price:</string>
+    <string name="convenience_chanrge_title">Convinience charge:</string>
+    <string name="convenience_chanrge">Convinience charge</string>
+    <string name="class_title">Class:</string>
+    <string name="total_title">Total:</string>
+    <string name="booking_id">Booking ID:</string>
+    <string name="choose_payment_option">Choose Payment Options</string>
+    <string name="resend_confirmation">Resend Confirmation</string>
+    <string name="share">Share</string>
+    <string name="need_help_booking">Need help on this booking?</string>
+    <string name="call_number">Call +255 677 555 999</string>
+    <string name="tickets">Tickets</string>
+    <string name="video_center">VideoCenter</string>
+    <string name="cinema">Cinema</string>
+    <string name="seat_number">Seat Number</string>
+    <string name="event_name">Event Name</string>
+    <string name="transaction_id">Transaction ID :</string>
+    <string name="msidn">MSIDN :</string>
+    <string name="amount">Amount :</string>
+    <string name="message">Message :</string>
+    <string name="buyer_name">Buyer Name :</string>
+    <string name="app_version">App Version</string>
+    <string name="non_stop">Non Stop</string>
+    <string name="stop">Stop</string>
+    <string name="options">options</string>
+    <string name="pnr">PNR</string>
+    <string name="booking_ref_no">Booking Ref No.</string>
+
+
+    <!--Themepark-->
+    <string name="enteras_fee">Entrance Fee</string>
+    <string name="rides">Rides @ 3000</string>
+    <string name="service_events">Service &amp; Events</string>
+    <string name="combos">Combos</string>
+    <string name="includes">Includes:-</string>
+    <string name="timing">Timining</string>
+    <string name="address">Address</string>
+    <string name="for_adult">For Adult</string>
+    <string name="for_child">For Child</string>
+    <string name="for_student">For Student</string>
+    <string name="adult">Adult</string>
+    <string name="child">Child</string>
+    <string name="student">Student</string>
+    <string name="adults">Adults</string>
+    <string name="childrens">Childrens</string>
+    <string name="infants">Infants</string>
+    <string name="infant">Infant</string>
+    <string name="to_">to</string>
+    <string name="depart">Depart</string>
+    <string name="above_12_year">Above 12 yrs</string>
+    <string name="two_12_year">2 - 12 yrs</string>
+    <string name="below_2_year">Below 2 yrs</string>
+    <string name="about">About</string>
+    <string name="image_gallery">Image Gallery</string>
+    <string name="major_attraction">Major Attraction</string>
+    <string name="continue_booking">Continue Booking</string>
+    <string name="book_tickets">Book Tickets</string>
+    <string name="my_cart">My Cart</string>
+    <string name="age_between">Age Between</string>
+    <string name="child_age">(Age between 04 - 12 yrs)</string>
+    <string name="adult_age">(Age between 12 - 50 yrs)</string>
+    <string name="yrs">yrs</string>
+    <string name="visitor_details">Visitor Details</string>
+    <string name="select_ticket_type">Select Ticket Type</string>
+    <string name="order_total">Order Total</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="not_added">You have not added the</string>
+    <string name="mandatory_entrance">Mandatory Entrance Fee,</string>
+    <string name="to_add">to add.</string>
+    <string name="skip_purchase">if you have purchased it</string>
+    <string name="already_for">already for </string>
+    <string name="add_more_ticket">Add More Ticket</string>
+    <string name="departure_from">Departure from</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="return_date">Return Date</string>
+    <string name="retrn">Return</string>
+    <string name="departure_flight">Departure Flights to </string>
+    <string name="refundable_flight">Refundable flights only</string>
+    <string name="free_meal">Free meal</string>
+    <string name="prefered_flights">Preferred Flights</string>
+    <string name="multiple_layovers">Multiple Layovers</string>
+    <string name="layover_at">Layover at</string>
+    <string name="flight_details">Flight Details</string>
+    <string name="review_flight_details">Review Flight Details</string>
+    <string name="partially_refundable">Partially Refundable</string>
+    <string name="refundable">Refundable</string>
+    <string name="non_refundable">Non Refundable</string>
+    <string name="baggage">Baggage : </string>
+    <string name="fare_rules">Fare Rules</string>
+    <string name="travel_assistance">Travel Assitance &amp; Insurance</string>
+    <string name="secure_trip">Secure your trip @%S/- per traveller</string>
+    <string name="view_all_benefits">View All Benefits *Insurance is only valid for</string>
+    <string name="citizen_below">Citizen below 70 year of age</string>
+    <string name="terms_condition">Terms &amp; Condition</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="cancellation_baggage">Cancellation and Baggage Policy</string>
+    <string name="rule_policy">Rule and Policies</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="ticket_sent">Your tickets will be sent here</string>
+    <string name="sessing_five_minute">Your session will expire in %s minutes</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="total_line_amount">Total\nAmount</string>
+    <string name="mr">Mr</string>
+    <string name="mrs">Mrs</string>
+    <string name="ms">Ms</string>
+    <string name="trip">Trip</string>
+    <string name="fare_details">Fare Details</string>
+    <string name="base_fare">Base fare</string>
+    <string name="taxes_fees">Taxes and fees</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="you_pay">You pay</string>
+    <string name="add_ons">Add-ons</string>
+    <string name="fee_surcharge">Fee &amp; Surcharge</string>
+    <string name="add_ons_title">Add ons</string>
+    <string name="cheap_fast">Cheap &amp; Fast</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="day_after_tomorrow">Day After Tomorrow</string>
+    <string name="set_new_password">Set New Password</string>
+    <string name="use_8_character">Use 8 or more characters with mix of letters numbers &amp; symbols @$%*?&amp;</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+
+
+    <!--hint-->
+    <string name="hint_baggage">Select your baggage (optional)</string>
+    <string name="hint_meal">Select your meal (optional)</string>
+    <string name="optional_bracket">(optional)</string>
+    <string name="select_city">Select City</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_traveller">Select Travellers</string>
+    <string name="select_class">Select Class</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="select_cinema">Select Cinema</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="passport_number_optional">Passport Number (Optional)</string>
+    <string name="passport_exp_date">Passport Exp Date</string>
+    <string name="passport_exp_date_optional">Passport Exp Date (Optional)</string>
+    <string name="passport_issue_date">Passport Issued Date</string>
+    <string name="passport_issue_date_optional">Passport Issued Date (Optional)</string>
+    <string name="passport_citizenship">Citizenship</string>
+    <string name="passport_citizenship_optional">Citizenship (Optional)</string>
+    <string name="passport_issue_by">Issue By (Country)</string>
+    <string name="passport_issue_by_optional">Issue By (Country) (Optional)</string>
+    <string name="facebook_app_id">2173405946085244</string>
+    <string name="fb_login_protocol_scheme">fb2173405946085244</string>
+    <!--<string name="facebook_app_id">793287867701541</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb793287867701541</string>-->
+
+    <!--alert-->
+    <string name="alert_enter_email">Please! Enter Email ID</string>
+    <string name="alert_enter_valid_email">Please! Enter Valid Email ID</string>
+    <string name="alert_enter_email_mobile">Please! Enter Email ID or Mobile Number</string>
+    <string name="alert_enter_phone">Please! Enter Mobile Number</string>
+    <string name="alert_enter_passport">Please! Enter Passport Number</string>
+    <string name="alert_enter_old_password">Please! Enter Old Password</string>
+    <string name="alert_enter_new_password">Please! Enter New Password</string>
+    <string name="alert_enter_confirm_new_password">Please! Enter Confirm New Password</string>
+    <string name="alert_password_not_match">New password and confirm password are not same. </string>
+
+    <string name="alert_enter_title">Please! Enter Title</string>
+    <string name="alert_enter_description">Please! Enter Description</string>
+    <string name="alert_enter_valid_phone">Please! Enter Valid Mobile Number With %S Character</string>
+    <string name="alert_enter_valid_phone_number">Please! Enter Valid Mobile Number</string>
+
+    <string name="alert_enter_password">Please! Enter Password</string>
+    <string name="alert_enter_valid_8_password">Password must be more than 7 character</string>
+    <string name="alert_enter_valid_12_password">Password must be less than 13 character</string>
+    <string name="alert_enter_valid_old_password">Old password must be more than 7 character</string>
+    <string name="alert_enter_valid_new_password">New password must be more than 7 character</string>
+    <string name="alert_enter_valid_confirm_password">Confirm new password must be more than 7 character</string>
+    <string name="alert_enter_fullname">Please! Enter Full Name</string>
+    <string name="alert_enter_firstname">Please! Enter First Name</string>
+    <string name="alert_enter_middle">Please! Enter Middle Name</string>
+    <string name="alert_enter_lastname">Please! Enter Last Name</string>
+    <string name="alert_enter_issue_by">Please! Enter Issued By</string>
+    <string name="alert_enter_citizenship">Please! Enter Citizenship</string>
+    <string name="alert_select_country_code">Please! Select Country Code</string>
+    <string name="alert_enter_coupon_code">Please! Enter Coupon Code</string>
+    <string name="alert_select_event_date">Please! Select Event Date</string>
+    <string name="alert_select_event_time">Please! Select Event Time</string>
+    <string name="alert_select_ticket_type">Please! Select Ticket Type</string>
+    <string name="alert_select_date">Please! Select Date</string>
+    <string name="alert_select_time">Please! Select Time</string>
+    <string name="alert_select_cinema">Please! Select Cinema</string>
+    <string name="alert_select_seat">Please! Select Seat</string>
+    <string name="alert_select_person_type">Please! Select Person Type</string>
+    <string name="alert_select_floor">Please! Select Floor</string>
+    <string name="alert_select_profile_image">Please! Select Profile Image</string>
+    <string name="alert_select_dob">Please! Select Date of Birth</string>
+    <string name="alert_select_issue_date">Please! Select Passport Issue Date</string>
+    <string name="alert_select_exp_date">Please! Select Passport Expire Date</string>
+    <string name="alert_select_total_ticket">Please! Select Total Ticket</string>
+    <string name="alert_select_available_ticket">You can not book more than availalble seat</string>
+    <string name="alert_select_food">Please! Select Food</string>
+    <string name="alert_add_ticket">Please! Add ticket</string>
+    <string name="alert_payment_successful">Payment Successful!</string>
+    <string name="alert_payment_fail">Payment Fail!</string>
+    <string name="alert_max_seat">You booked all seat. Please! proceed to payment</string>
+    <string name="alert_no_current_movie">No current movie found!</string>
+    <string name="alert_no_water_park">No Water Park found!</string>
+    <string name="alert_no_theme_park">No Theme Park found!</string>
+    <string name="alert_no_park">No Park found!</string>
+    <string name="alert_no_upcoming_movie">No upcoming movie found!</string>
+    <string name="alert_no_screen">No Screen found!</string>
+    <string name="alert_transaction_fail">Transaction Fail!</string>
+    <string name="alert_launch_soon">This feature will be available very soon, Please hold on for new updates.</string>
+    <string name="alert_minimum_amount">Minimum ticket amount %s required.</string>
+    <string name="alert_add_glasses">Please! add 3D glasses to watch movie.</string>
+    <string name="alert_limit_glasses">You can\'t purchase glasses more than seat.</string>
+    <string name="alert_remaining_seat">Please! Select your remaining seat.</string>
+    <string name="alert_add_traveller">Please! add traveller.</string>
+    <string name="alert_departure_date">Please! select departure date.</string>
+    <string name="alert_return_date">Please! select return date.</string>
+    <string name="alert_valid_date">Please! select valid date.</string>
+    <string name="alert_departure_city">Please! select departure city.</string>
+    <string name="alert_destination_city">Please! select destination city.</string>
+    <string name="alert_city_not_same">Departure and destination city must not same.</string>
+    <string name="alert_class">Please! select class.</string>
+    <string name="alert_currency">Please! select currency.</string>
+    <string name="alert_departure_flight">Please! select departure flight.</string>
+    <string name="alert_return_flight">Please! select return flight.</string>
+    <string name="alert_max_city">You can add maximum 4 city.</string>
+    <string name="msg_3d_text">This movie requires 3D Glasses,\nDo you have?\nIf not please add 3D Glasses and proceed to buy!!</string>
+    <string name="msg_seat_processed">This seat is being booked by someone else, please choose another seat</string>
+    <string name="msg_seat_booked">This seat already booked by someone else, please choose another seat</string>
+    <string name="msg_cary_empty">Cart is empty.</string>
+    <string name="msg_session_expire">Your Session Expired</string>
+    <string name="msg_refresh_list">Refreshing list to get better updates of time</string>
+    <string name="msg_agree_terms">I agree to the terms &amp; conditions and privacy policy</string>
+    <string name="msg_have_agree_terms">You will have to agree to the Terms &amp; Conditions in order to proceed</string>
+    <string name="msg_name_photoid">Please make sure you enter the Name as per your govt. photo ID.</string>
+
+    <string name="airline_pnr">The airline PNR</string>
+    <string name="your_payment">Your Payment</string>
+    <string name="bieng_retrieved">is being retrieved</string>
+    <string name="bieng_processed">is being processed</string>
+    <string name="do_not_close_window">Please do not close this window</string>
+    <string name="new_update_available">New Update Available</string>
+    <string name="install_update_now">Good news, new update of application is available. Please install new update now</string>
+    <string name="loading">Loading...</string>
+    <string name="msg_press_exit">Press again for exit</string>
+    <string name="msg_no_internet">Internet connection not available. Please! check your settings!</string>
+    <string name="msg_something_went">Something went wrong!</string>
+    <string name="msg_booked_successfully">Your Ticket Booked Successfully</string>
+    <string name="msg_no_flight">No flights found for this dates, please choose other dates above</string>
+    <string name="msg_no_flight_return">No flights found for this dates, please choose other dates</string>
+    <string name="msg_login_first">You need to login first</string>
+    <string name="msg_payment_disable">Selected payment gateway disabled.Please try other payment gateways</string>
+    <string name="msg_payment_disable_currency">Selected payment gateway disabled.Please try other payment gateways</string>
+    <string name="msg_logout">Do you wish to logout?</string>
+    <string name="msg_need_login">You need to login for your bookings</string>
+    <string name="msg_no_pending_trip">No bookings found here...</string>
+    <string name="msg_no_combo">We are Cooking up Something Special For You! Skip for Now!</string>
+    <string name="msg_adult_age">Age for adult should be more than 12 year</string>
+    <string name="msg_children_age">Age for children should be between 2 year and 12 year</string>
+    <string name="msg_infant_age">Age for infant should be below 2 year</string>
+    <string name="msg_enter_code">Please! Enter code</string>
+    <string name="msg_code_not_apply">This coupon not applied on this</string>
+
+    <string name="alert_event_seat_validation">You can book only 9 seats per booking!! Already you selected 9 seats. </string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="msg_back_mpesa">A payment approval message is sent to the provided mpesa number, please approve or cancel the transaction at the phone to navigate away from this page</string>
+    <string name="msg_back_tigo">A payment approval message is sent to the provided tigopesa number, please approve or cancel the transaction at the phone to navigate away from this page</string>
+    <string name="msg_back_airtel">A payment approval message is sent to the provided airtel number, please approve or cancel the transaction at the phone to navigate away from this page</string>
+
+    <string name="msg_payment_mpesa_txt">We have sent request on your MPESA number\n Please follow instructions and respond swiftly. Once you confirm we\'ll proceed to book tickets</string>
+    <string name="msg_payment_tigo_txt">We have sent request on your TIGO PESA number\n Please follow instructions and respond swiftly. Once you confirm we\'ll proceed to book tickets</string>
+    <string name="msg_payment_airtel_txt">We have sent request on your Airtel number\n Please follow instructions and respond swiftly. Once you confirm we\'ll proceed to book tickets</string>
+
+    <!--Image Picker-->
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="lbl_remove_picture">Remove Profile Image</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <string-array name="service_array">
+        <item>@string/movie</item>
+        <item>@string/flight</item>
+        <item>@string/event</item>
+        <item>@string/theme_park</item>
+        <item>@string/bus</item>
+        <!--  <item>@string/hotel</item>
+        <item>@string/ferry</item>
+        <item>@string/tours</item>-->
+    </string-array>
+
+    <string-array name="movie_array">
+        <item>@string/now_showing</item>
+        <item>@string/coming_soon</item>
+    </string-array>
+
+    <string-array name="event_array">
+        <item>All</item>
+        <item>Music</item>
+        <item>Perfomances</item>
+        <item>Comedy</item>
+        <item>Exhibition</item>
+    </string-array>
+
+    <string-array name="themepark_array">
+        <item>All</item>
+        <!--<item>Water Park</item>-->
+        <item>Theme Park</item>
+    </string-array>
+
+    <string-array name="flight_array">
+        <item>ONEWAY</item>
+        <item>RETURN</item>
+        <!--<item>MULTI CITY</item>-->
+    </string-array>
+
+    <string-array name="flight_addons_array">
+        <item>Meal</item>
+        <item>Baggage</item>
+        <!--<item>Seat</item>-->
+    </string-array>
+
+    <string-array name="my_trips_array">
+        <item>UPCOMING</item>
+        <item>COMPLETED</item>
+        <item>CANCELLED</item>
+    </string-array>
+
+    <string name="slycalendar_singledate" translatable="false">EE, dd MMMM</string>
+    <string name="slycalendar_short" translatable="false">EE, dd</string>
+    <string name="slycalendar_short_month" translatable="false">EE, dd MMM</string>
+    <string name="slycalendar_dates_period" translatable="false">%1$s – %2$s</string>
+
+    <string name="slycalendar_cancel">Cancel</string>
+    <string name="slycalendar_save">Ok</string>
+    <string name="slycalendar_next">Next</string>
+    <string name="slycalendar_prev">Prev</string>
+
+    <string name="timer">00:00</string>
+    <string name="card_type">CARD TYPE</string>
+    <string name="charges">Charges</string>
+    <string name="card_no">Card Number</string>
+    <string name="card_expiry">CARD EXPIRY</string>
+    <string name="cvv">CVV</string>
+    <string name="mastercard">Master Card</string>
+    <string name="visa">Visa</string>
+    <string name="Amex">American Express</string>
+    <string name="AmexPurchaseCard">Amex Corporate Purchase Card</string>
+    <string name="Dinersclub">Diners Club</string>
+    <string name="alert_card_number">Please! Enter Card Number</string>
+    <string name="alart_valid_card_number">Please! Enter Valid Card Number</string>
+    <string name="alert_card_card_type">Please! Select Card Type</string>
+    <string name="alert_card_expirykey">Please! Enter Card Expiry Date</string>
+    <string name="alert_card_cvv">Please! Enter CVV Number</string>
+    <string name="aler_card_cvv_lenth">Please! Enter Valid CVV Number</string>
+    <string name="card_title">DEBIT/CREDIT CARDS</string>
+    <string name="card_exp_dt_valid">Your Card Is Expired</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="food_combos">Food &amp; Beverages</string>
+    <string name="title">Title</string>
+    <string name="choose_ride_date">Please! Choose Ride Date</string>
+    <string name="Order_Priview">Order Preview</string>
+
+    <string name="discount">Discount :</string>
+    <string name="Convenience_fee">Convenience Fee :</string>
+    <string name="Taxable_mount">Taxable Amount :</string>
+    <string name="Total_VAT">Total VAT :</string>
+    <string name="payable_amount">Payable Amount :</string>
+    <string name="Total_Excl_of_Tax">Total Excl. Of Tax :</string>
+    <string name="booked_by">Booked By </string>
+    <string name="remove">Remove</string>
+    <string name="offer_voucher_giftCare">Offers,Vouchers &amp; Gift Card</string>
+    <string name="apply_offers">Apply Offers, Vouchers &amp; Gift Card</string>
+
+    <string name="crdit">Debit Credit Card</string>
+    <string name="tigo">Tigo Pesa</string>
+    <string name="mpesa">M-Pesa</string>
+    <string name="airtelmoney">Airtel Money</string>
+    <string name="nidc">NIDC</string>
+    <string name="select_package">Select Package</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="Upcoming">Upcoming</string>
+    <string name="completed">Completed</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="boarding_dropping_point">Boarding &amp; Dropping point</string>
+    <string name="cancellation_policy">&#8226; Cancellation policy</string>
+    <string name="single">OneWay</string>
+    <string name="Return">Return</string>
+    <string name="LowerSeat">Lower Seats</string>
+    <string name="UpperSeat">Upper Seats</string>
+    <string name="round_trip">Round Trip</string>
+    <string name="select_departure_bus">Select Departure Bus</string>
+    <string name="departure_bus">Departure Bus</string>
+    <string name="select_return_bus">Select Return Bus</string>
+    <string name="return_bus">Return bus</string>
+    <string name="select_boarding_point">Select boarding point</string>
+    <string name="select_dropping_point">Select dropping point</string>
+    <string name="i_accept">I accept</string>
+    <string name="and">and</string>
+    <string name="you_need_accept_pp_tc">You need to accept privacy policy and terms &amp; conditions</string>
+    <string name="boarding">Boarding</string>
+    <string name="dropping">Dropping</string>
+    <string name="dropping_point">Dropping point</string>
+
+    <string name="passport">Passport</string>
+    <string name="contact">Contact</string>
+    <string name="passenger_info">Passenger</string>
+    <string name="contact_info">Contact Information</string>
+    <string name="search">Search</string>
+    <string name="to_enter_city">Enter city</string>
+    <string name="Passenger">Passengers</string>
+    <string name="from_enter_city">Enter city</string>
+    <string name="From">From</string>
+    <string name="number_of_cargo">Number of cargo</string>
+    <string name="please_enter_station_name">Please enter station name</string>
+    <string name="only_alphabets_are_allowed">only alphabets are allowed</string>
+    <string name="please_select_station_form_list">Please select station form list</string>
+    <string name="Loading">Loading...</string>
+    <string name="InvalidCredentials">Invalid credentials</string>
+    <string name="no_internet_connection">No internet connection..!</string>
+    <string name="Travel_date">Travel date</string>
+    <string name="Booked_date">Booked date</string>
+    <string name="Departure_time">Departure time</string>
+    <string name="departure_time">Departure time :</string>
+    <string name="route">Route</string>
+    <string name="fare">Fare</string>
+    <string name="Fare">Fare : </string>
+    <string name="bus_type">Bus type</string>
+    <string name="bus_route">Bus route</string>
+    <string name="seat_type">Seat type</string>
+    <string name="Book_ticket">Book ticket</string>
+    <string name="passenger_details">Passenger\'s details</string>
+    <string name="Enter_passenger_name_no_optional">Enter passenger name</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="enter_valid_phone_number">Please enter valid phone number</string>
+    <string name="enter_email_ID">Enter email id</string>
+    <string name="seat_details">Seat details</string>
+    <string name="enter_passenger_name">Enter passenger name</string>
+    <string name="passenger_name">Passenger name</string>
+    <string name="enter_passenger_age">Enter passenger age</string>
+    <string name="enter_passenger_passport_number">Enter passenger passport number</string>
+    <string name="gender_male_female">Gender : Male ,Female</string>
+    <string name="genter">Select gender :</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="enter_valid_age">Enter valid age</string>
+    <string name="enter_valid_email_id">Enter valid email id</string>
+    <string name="ticket_no_colon">Ticket number : </string>
+    <string name="journey_route_colon">Journey route : </string>
+    <string name="traveldate">Travel date : </string>
+    <string name="departuretime">Departure time : </string>
+    <string name="agent_name">Agent name</string>
+    <string name="Bus_Name">Bus name : </string>
+    <string name="Bus_No">Bus no : </string>
+    <string name="Single_fare">Single fare :</string>
+    <string name="total_fare_colon">Total fare :</string>
+    <string name="To">To :</string>
+    <string name="print_end_message">We wish you a pleasant journey</string>
+    <string name="Number_of_passengers">Number of passengers</string>
+    <string name="Passenger_Details">Passenger details</string>
+    <string name="Seat_Numbers">Seat numbers</string>
+    <string name="seat_No">Seat No.</string>
+    <string name="voltage_error">Voltage error</string>
+    <string name="isprinter_operation">isPrinterOperation</string>
+    <string name="noPaper">No Paper</string>
+    <string name="no_reaction">No reaction</string>
+    <string name="get_fail">Get fail</string>
+    <string name="low_power">Low power</string>
+    <string name="please_enter_valid_transction_password">Please enter valid transaction password</string>
+    <string name="enter_transaction_password">Enter transaction password</string>
+    <string name="Phone_No">Phone no. : </string>
+    <string name="Congratulations">Congratulations !</string>
+    <string name="Ticket_booked_successfully">Ticket booked successfully !</string>
+    <string name="Congratulations_Your_ticket_has_been_booked_successfully">Your ticket has been booked successfully !</string>
+    <string name="Seat_No">Seat no</string>
+    <string name="ticket_number">Ticket number</string>
+    <string name="total_seat">Total seats</string>
+    <string name="single_fare">Single fare</string>
+    <string name="Amount">Amount</string>
+    <string name="button_oK">OK</string>
+    <string name="Print_Duplicate_Ticket">Print duplicate ticket</string>
+    <string name="select_route">Select route</string>
+    <string name="enter_passenger_count">Enter valid passenger count</string>
+    <string name="enter_fare">Enter fare</string>
+    <string name="Button_Cancel">Cancel</string>
+    <string name="proccessing">Processing</string>
+    <string name="button_Book_seats">Book seats</string>
+    <string name="please_select_seats">Please select seats</string>
+    <string name="something_went_wrong_try_again">Something went wrong, Please try again!</string>
+    <string name="seats_left">Seats left</string>
+    <string name="Booking_is_not_enabled_please_try_later">Booking is not enabled, Please try later</string>
+    <string name="Seat_Already_Booked">Seat already booked</string>
+    <string name="Seat_in_processing">Seat in processing</string>
+</resources>

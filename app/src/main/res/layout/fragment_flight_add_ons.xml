@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxWidth="@dimen/_230sdp"
+            android:text="@string/add_ons_title"
+            android:textColor="@color/movie_tab_selected"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/movie_tab_selected" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tlSlidingTabs"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/green_veg"
+        app:tabIndicatorHeight="@dimen/_5sdp"
+        app:tabMinWidth="@dimen/_50sdp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="@dimen/_10sdp"
+        app:tabPaddingStart="@dimen/_10sdp"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/AddOnsTabTextAppearance" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_ee" />
+
+    <com.otapp.net.view.NonSwipeableViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity="center"
+         android:gravity="center_vertical">
+
+         <com.github.loadingview.LoadingView
+             android:id="@+id/loadingView"
+             android:layout_width="match_parent"
+             android:layout_height="72dp"
+             android:layout_gravity="center"
+             android:visibility="gone"
+             app:lv_duration="30"
+             app:lv_end_color="@color/color_end"
+             app:lv_external_radius="24dp"
+             app:lv_internal_radius="4dp"
+             app:lv_start_color="@color/color_start" />
+     </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnrLayoutClass"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tvTicketClass"
+            android:text="Economy"/>
+
+        <ImageView
+            android:id="@+id/ic_Info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_info" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrice"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:minWidth="@dimen/_80sdp"
+            android:textStyle="bold"
+            android:text="TSH 1000.00"/>
+        <LinearLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:minWidth="60dp"
+            android:id="@+id/spinerLayout"
+            android:background="@drawable/bg_round_border_gray">
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minWidth="60dp"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:textAlignment="textEnd"
+                    android:id="@+id/spSelectNoOfTicket"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/lnrLayoutClass"
+        android:background="@color/gray_60" />
+</RelativeLayout>

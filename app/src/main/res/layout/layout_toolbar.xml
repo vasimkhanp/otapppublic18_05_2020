@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorTransparent">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_left_arrow_back"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewHeaderBack"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="3dp"
+            android:paddingBottom="0dp"
+            android:src="@drawable/ic_top_logo_name" />
+
+        <TextView
+            android:id="@+id/textViewVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@id/imageViewHeaderBack"
+            android:textSize="8dp"
+            android:visibility="gone"
+            android:text="App Version 1.0"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextIcon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="05dp">
+
+            <ImageView
+                android:id="@+id/imageViewExpenses1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_logout"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageViewIncome1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_logout"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

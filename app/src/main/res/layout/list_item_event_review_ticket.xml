@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/tvTicketTitle"
+        style="@style/EventFontOpenSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ticket_price_title"
+        android:textColor="@color/gray_60"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvTicketPrice"
+        style="@style/EventFontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tvTicketTitle"
+        android:gravity="right"
+        android:text="@string/ticket_price_title"
+        android:textColor="@color/gray_60"
+        android:textSize="@dimen/_13sdp" />
+
+</RelativeLayout>

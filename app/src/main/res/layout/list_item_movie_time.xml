@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrContainer"
+    android:layout_width="@dimen/_55sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/_8sdp"
+    android:background="@drawable/bg_round_border_blue_movie"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_2sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingRight="@dimen/_2sdp"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tvMovieDate"
+        style="@style/FontLatoBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/date"
+        android:textColor="@color/blue_movie"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tvMovieFormate"
+        style="@style/FontLatoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center"
+        android:text="@string/date"
+        android:textColor="@color/blue_movie"
+        android:textSize="@dimen/_10sdp" />
+
+</LinearLayout>

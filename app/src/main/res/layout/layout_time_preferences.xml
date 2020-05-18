@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_2sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/time_preferences"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView style="@style/FontOpenSansSemiBold"
+            android:id="@+id/tvMorning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_border_gray"
+            android:drawableTop="@drawable/ic_morning"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="6-12"
+            android:textColor="@color/gray_8e"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toStartOf="@+id/tvDay"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView style="@style/FontOpenSansSemiBold"
+            android:id="@+id/tvDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:background="@drawable/bg_rectangle_border_gray"
+            android:drawableTop="@drawable/ic_afternoon"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="12-18"
+            android:textColor="@color/gray_8e"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/tvMorning"
+            app:layout_constraintTop_toTopOf="@id/tvMorning" />
+
+        <TextView style="@style/FontOpenSansSemiBold"
+            android:id="@+id/tvEvening"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:background="@drawable/bg_rectangle_border_gray"
+            android:drawableTop="@drawable/ic_evening"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="18-24"
+            android:textColor="@color/gray_8e"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toStartOf="@+id/tvMoon"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMorning" />
+
+        <TextView style="@style/FontOpenSansSemiBold"
+            android:id="@+id/tvMoon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:background="@drawable/bg_rectangle_border_gray"
+            android:drawableTop="@drawable/ic_night"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="24-06"
+            android:textColor="@color/gray_8e"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/tvEvening"
+            app:layout_constraintTop_toTopOf="@id/tvEvening" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

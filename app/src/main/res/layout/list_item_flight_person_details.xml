@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnrPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPersonCategory"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/adult"
+            android:textColor="@color/gray_2d"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tvPersonArrow"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/ic_arrow_down" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/mViewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/gray_a0" />
+
+    <LinearLayout
+        android:id="@+id/lnrDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMr"
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle_border_batli_gender"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/mr"
+                android:textColor="@color/batli_gender"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvMrs"
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle_border_batli_gender"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/mrs"
+                android:textColor="@color/batli_gender"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvMs"
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle_border_batli_gender"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/ms"
+                android:textColor="@color/batli_gender"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/actvFirstName"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:singleLine="true"
+            android:hint="@string/first_name"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords|textNoSuggestions"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/gray_64"
+            android:textColorHint="@color/gray_64"
+            android:textSize="@dimen/_10sdp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actvMiddleName"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:singleLine="true"
+            android:hint="@string/middle_name_optional"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords|textNoSuggestions"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/gray_64"
+            android:textColorHint="@color/gray_64"
+            android:textSize="@dimen/_10sdp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actvLastName"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:singleLine="true"
+            android:hint="@string/last_name"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords|textNoSuggestions"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/gray_64"
+            android:textColorHint="@color/gray_64"
+            android:textSize="@dimen/_10sdp" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginTop="@dimen/_5sdp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvCountryCode"-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/_5sdp"-->
+        <!--android:layout_marginRight="@dimen/_5sdp"-->
+        <!--android:drawableRight="@drawable/ic_arrow_drop_down"-->
+        <!--android:text="+255"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textColor="@color/gray_3c"-->
+        <!--android:textSize="@dimen/_10sdp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<AutoCompleteTextView-->
+        <!--android:id="@+id/actvMobileNumber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:digits="1234567890"-->
+        <!--android:hint="@string/mobile_number"-->
+        <!--android:imeOptions="actionDone"-->
+        <!--android:inputType="numberSigned"-->
+        <!--android:maxLength="9"-->
+        <!--android:padding="@dimen/_10sdp"-->
+        <!--android:textColor="@color/gray_64"-->
+        <!--android:textColorHint="@color/gray_64"-->
+        <!--android:textSize="@dimen/_10sdp" />-->
+
+        <!--</LinearLayout>-->
+
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:clickable="false"
+            style="@style/FontOpenSansSemiBold"
+            android:focusable="false"
+            android:hint="@string/dob"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/gray_64"
+            android:textColorHint="@color/gray_64"
+            android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:id="@+id/lnrInternational"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvPassportNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/passport_number"
+                style="@style/FontOpenSansSemiBold"
+                android:imeOptions="actionDone"
+                android:inputType="textCapCharacters"
+
+                android:maxLength="20"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/gray_64"
+                android:textColorHint="@color/gray_64"
+                android:textSize="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/etPassportIssueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                style="@style/FontOpenSansSemiBold"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="@string/passport_issue_date"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/gray_64"
+                android:textColorHint="@color/gray_64"
+                android:textSize="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/etPassportExpDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:clickable="false"
+                style="@style/FontOpenSansSemiBold"
+                android:focusable="false"
+                android:hint="@string/passport_exp_date"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/gray_64"
+                android:textColorHint="@color/gray_64"
+                android:textSize="@dimen/_10sdp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actvIssuedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                style="@style/FontOpenSansSemiBold"
+                android:hint="@string/passport_issue_by"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/gray_64"
+                android:textColorHint="@color/gray_64"
+                android:textSize="@dimen/_10sdp" />
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/gray_8ca" />-->
+
+            <AutoCompleteTextView
+                android:id="@+id/actvCitizenship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                style="@style/FontOpenSansSemiBold"
+                android:hint="@string/passport_citizenship"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/gray_64"
+                android:textColorHint="@color/gray_64"
+                android:textSize="@dimen/_10sdp" />
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/gray_8ca" />-->
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinMeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="@string/hint_meal"
+            style="@style/FontOpenSansSemiBold"
+            android:background="@null"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/gray_64"
+            android:textColorHint="@color/gray_64"
+            android:textSize="@dimen/_10sdp" />
+
+        <Spinner
+            android:id="@+id/spinBaggage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            style="@style/FontOpenSansSemiBold"
+            android:background="@null"
+            android:hint="@string/hint_baggage"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/gray_64"
+            android:textColorHint="@color/gray_64"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

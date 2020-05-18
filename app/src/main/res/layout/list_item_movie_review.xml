@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrUserReview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_border_gray_bf"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/app_name"
+            android:textColor="@color/gray_4c"
+            android:textSize="@dimen/_12sdp" />
+
+        <RatingBar
+            android:id="@+id/rbRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:progressTint="@color/rating" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="0%"
+            android:textColor="@color/gray_4c"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCommentTitle"
+        style="@style/FontOpenSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_3c"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/tvUserComment"
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_84"
+        android:textSize="@dimen/_12sdp" />
+
+</LinearLayout>

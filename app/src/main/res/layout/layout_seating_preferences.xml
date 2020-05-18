@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/FontOpenSansSemiBold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/seating_preferences"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/layout_line" />
+
+    <TextView
+        android:id="@+id/tvAcSeater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_ac_sleeper"
+        android:drawablePadding="@dimen/_10sdp"
+        style="@style/FontOpenSansSemiBold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/ac_seater"
+        android:textColor="@color/gray_46"
+        android:textSize="@dimen/_15sdp" />
+
+    <include layout="@layout/layout_line" />
+
+    <TextView
+        android:id="@+id/tvAcSleeper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_ac_sleeper"
+        android:drawablePadding="@dimen/_10sdp"
+        style="@style/FontOpenSansSemiBold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/ac_sleeper"
+        android:textColor="@color/gray_46"
+        android:textSize="@dimen/_15sdp" />
+
+    <include layout="@layout/layout_line" />
+
+    <TextView
+        android:id="@+id/tvNonAcSeater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_non_ac_seater"
+        android:drawablePadding="@dimen/_10sdp"
+        style="@style/FontOpenSansSemiBold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/non_ac_seater"
+        android:textColor="@color/gray_46"
+        android:textSize="@dimen/_15sdp" />
+
+    <include layout="@layout/layout_line" />
+
+    <TextView
+        android:id="@+id/tvNonAcSleeper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_non_ac_sleeper"
+        android:drawablePadding="@dimen/_10sdp"
+        style="@style/FontOpenSansSemiBold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/non_ac_sleeper"
+        android:textColor="@color/gray_46"
+        android:textSize="@dimen/_15sdp" />
+
+</LinearLayout>

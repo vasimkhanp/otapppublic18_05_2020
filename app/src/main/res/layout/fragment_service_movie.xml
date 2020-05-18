@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<android.support.v4.view.ViewPager-->
+        <com.otapp.net.view.AutoScrollViewPager
+            android:id="@+id/vpFeatured"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@color/gray_f3"
+            android:overScrollMode="never" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tlDots"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            app:tabBackground="@drawable/indicator_tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+
+        <EditText
+            android:id="@+id/etMovieSearch"
+            style="@style/FontLatoRegular"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/bg_search_bar"
+            android:drawableLeft="@drawable/ic_movie_search"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_search_movie"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:textColor="@color/gray_8c"
+            android:textColorHint="@color/gray_8c"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivFeaturedMovie"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="fitXY" />-->
+
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/aviProgress"-->
+        <!--style="@style/AVLoadingIndicatorView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:visibility="gone"-->
+        <!--app:indicatorColor="@color/colorPrimary"-->
+        <!--app:indicatorName="BallPulseIndicator" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vpFeatured"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tlSlidingTabs"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/MyMovieTabTextAppearance" />
+
+            <com.otapp.net.view.NonSwipeableViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:overScrollMode="never"
+                android:padding="@dimen/_5sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:background="@drawable/bg_bus_behind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnrTopTab" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/mCardView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_round_rectangle_white"
+                android:padding="@dimen/_15sdp">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/mBusConstrain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                   <TextView style="@style/FontOpenSansSemiBold"
+                        android:id="@+id/tvFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bus_left_margin"
+                        android:text="@string/from"
+                        android:textColor="@color/gray_75"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain"
+                        app:layout_constraintTop_toTopOf="@+id/mBusConstrain" />
+
+
+                    <EditText
+                        android:id="@+id/etFromCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bus_left_margin"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="@string/select_city"
+                        android:textColor="@color/gray_39"
+                        android:textColorHint="@color/gray_39"
+                        android:textSize="@dimen/_15sdp"
+                        style="@style/FontOpenSansSemiBold"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFrom" />
+
+                   <TextView style="@style/FontOpenSansSemiBold"
+                        android:id="@+id/tvFromPin"
+                        android:layout_width="@dimen/bus_pin_width"
+                        android:layout_height="@dimen/bus_pin_width"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/ic_bus_pin"
+                        app:layout_constraintBottom_toBottomOf="@+id/etFromCity"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain" />
+
+                   <TextView style="@style/FontOpenSansSemiBold"
+                        android:id="@+id/tvTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bus_left_margin"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/to"
+                        android:textColor="@color/gray_75"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain"
+                        app:layout_constraintTop_toBottomOf="@+id/etFromCity" />
+
+                    <EditText
+                        android:id="@+id/etToCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bus_left_margin"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="@string/select_city"
+                        android:textColor="@color/gray_39"
+                        android:textColorHint="@color/gray_39"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        style="@style/FontOpenSansSemiBold"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTo" />
+
+                   <TextView style="@style/FontOpenSansSemiBold"
+                        android:layout_width="@dimen/bus_pin_width"
+                        android:layout_height="@dimen/bus_pin_width"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/ic_bus_pin"
+                        app:layout_constraintBottom_toBottomOf="@+id/etToCity"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain" />
+
+                   <TextView style="@style/FontOpenSansSemiBold"
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bus_left_margin"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/departure"
+                        android:textColor="@color/gray_75"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain"
+                        app:layout_constraintTop_toBottomOf="@+id/etToCity" />
+
+                    <EditText
+                        android:id="@+id/etDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bus_left_margin"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/select_date"
+                        android:textColor="@color/gray_39"
+                        android:textColorHint="@color/gray_39"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        style="@style/FontOpenSansSemiBold"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+                   <TextView style="@style/FontOpenSansSemiBold"
+                        android:layout_width="@dimen/bus_pin_width"
+                        android:layout_height="@dimen/bus_pin_width"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/ic_calendar"
+                        app:layout_constraintBottom_toBottomOf="@+id/etDate"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain" />
+
+                   <TextView style="@style/FontOpenSansSemiBold"
+                        android:id="@+id/tvSearchBuses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/bg_button_primary"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/search_buses"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="@+id/mBusConstrain"
+                        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltBus"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignTop="@+id/mCardView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_minus22sdp"
+                android:background="@drawable/bg_circle_white"
+                android:padding="@dimen/_10sdp">
+
+               <TextView style="@style/FontOpenSansSemiBold"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_bus"
+                    android:backgroundTint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

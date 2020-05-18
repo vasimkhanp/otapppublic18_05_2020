@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black"
+    android:background="@color/colorTransparent">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:id="@+id/back"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_left_arrow_back"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/toolbarTitle"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:text="@string/food_combos"/>
+</android.support.v7.widget.Toolbar>

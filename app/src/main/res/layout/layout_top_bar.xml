@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:id="@+id/imageViewHeaderBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="visible"
+            android:padding="4dp"
+            android:src="@drawable/ic_back_bus" />
+
+        <TextView
+            android:id="@+id/textViewHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextIcon" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/textViewHeaderTitle"
+            android:background="@color/colorTextIcon"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:padding="1dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_logout" />
+    </RelativeLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha=".8"
+        android:layout_below="@id/relativeLayoutTopBar"
+        android:background="@color/colorSecondaryText"
+        android:visibility="visible" />
+
+</RelativeLayout>

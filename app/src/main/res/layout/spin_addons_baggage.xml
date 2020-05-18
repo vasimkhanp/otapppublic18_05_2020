@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_border_gray_bf"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/tvAddOn"
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_baggage"
+        android:textColor="@color/gray_44"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/ic_arrow_drop_down"/>
+
+</LinearLayout>

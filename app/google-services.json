@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "642250044959",
+    "firebase_url": "https://otapp-231013.firebaseio.com",
+    "project_id": "otapp-231013",
+    "storage_bucket": "otapp-231013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642250044959:android:38a00abd64b0eb67",
+        "android_client_info": {
+          "package_name": "com.avkcomputers.otapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlE1jnVBgbKfqwHQ_zuUgwFTQhf5xFrXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642250044959-2veijpe20dddu1unuvnvng0o7iujj9h6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642250044959:android:a58ea1e02915f620",
+        "android_client_info": {
+          "package_name": "com.otapp.net"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlE1jnVBgbKfqwHQ_zuUgwFTQhf5xFrXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642250044959-2veijpe20dddu1unuvnvng0o7iujj9h6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

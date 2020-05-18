@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="service_drawable_array">
+        <item>@drawable/ic_bus</item>
+        <item>@drawable/ic_airplane</item>
+        <item>@drawable/ic_hotel</item>
+        <item>@drawable/ic_movie</item>
+        <item>@drawable/ic_events</item>
+        <item>@drawable/ic_ferry</item>
+        <item>@drawable/ic_theme_park</item>
+        <item>@drawable/ic_tours</item>
+    </integer-array>
+
+</resources>

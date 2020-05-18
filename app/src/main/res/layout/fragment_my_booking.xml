@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.fragment.MyBookingFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_booking_tolbar_background">
+
+        <include
+            android:id="@+id/toolbar"
+            android:visibility="gone"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layoutLogin"
+        android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Please login to see my bookings!!"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/tvLoginPage"
+            android:gravity="center"
+            android:background="@drawable/bg_skip_continue"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="Login Now"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:id="@+id/layoutMyBooking"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tabLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_booking_tolbar_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/my_booking"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="ALL"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TableRow
+                        android:id="@+id/allSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/Color_Yellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUpcoming"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="UPCOMING"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TableRow
+                        android:id="@+id/upcomingSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/Color_Yellow"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCompleted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="COMPLETED"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TableRow
+                        android:id="@+id/completedSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/Color_Yellow"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#a0a0a0"
+                android:orientation="vertical"
+
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/otappTabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        app:tabTextAppearance="@style/TabTextAppearance"
+                        app:tabIndicatorHeight="3dp"
+                        android:background="#EEEEEE"
+                        android:minWidth="100dp"
+                        app:tabIndicatorColor="#FAC81B"
+                        app:tabGravity="fill"
+                        app:tabMode="scrollable" />
+
+
+                    <ImageView
+                        android:id="@+id/ivNextTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play_arrow_black_24dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viwePager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <LinearLayout
+                    android:id="@+id/noEventLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/no_bookings" />
+                </LinearLayout>
+                <!--  <android.support.v7.widget.RecyclerView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/recyclerBooking"/>-->
+            </LinearLayout>
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="#a0a0a0"
+                 android:paddingTop="10dp"
+                 android:paddingBottom="10dp"
+                 android:id="@+id/pagerLayout"
+                 android:gravity="center_horizontal"
+                 android:layout_alignParentBottom="true">
+               <android.support.v7.widget.RecyclerView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/recyclerPagination"
+                   android:layout_marginLeft="20dp"
+                   android:orientation="horizontal"/>
+
+             </LinearLayout>-->
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

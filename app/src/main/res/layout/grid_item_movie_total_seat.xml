@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvSeat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/FontOpenSansSemiBold"
+    android:gravity="center"
+    android:minWidth="@dimen/_30sdp"
+    android:minHeight="@dimen/_30sdp"
+    android:padding="@dimen/_2sdp"
+    android:textColor="@color/gray_56"
+    android:textSize="@dimen/_14sdp">
+
+</TextView>

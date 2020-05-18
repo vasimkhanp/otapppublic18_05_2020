@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rltMain"
+    android:layout_width="@dimen/_220sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/_15sdp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:background="@drawable/bg_round_rectangle_white_transparent"
+        android:elevation="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/_6sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|left"
+                android:minLines="2"
+                android:text="BEST HOTELS FOR YOUR\nFAMILY TRIPS"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/gray_7e" />
+
+            <TextView
+                android:id="@+id/tvSupport"
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:minLines="2"
+                android:text="24x7 Travel Hotline | Free Meals Available\n1 Night Free"
+                android:textColor="@color/gray_39"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBook"
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_97sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="@drawable/bg_gradient_book"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/book_now"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

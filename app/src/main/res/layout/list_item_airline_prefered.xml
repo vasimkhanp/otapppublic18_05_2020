@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrFlight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_1sdp">
+
+    <ImageView
+        android:id="@+id/ivAirline"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_5sdp" />
+
+    <TextView
+        android:id="@+id/tvAirline"
+        style="@style/FontOpenSansRegular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/flight"
+        android:textColor="@color/gray_2a"
+        android:textSize="@dimen/_12sdp" />
+
+    <CheckBox
+        android:id="@+id/cbFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:button="@drawable/btn_radio_big_filter"
+        android:checked="false"
+        android:clickable="false" />
+
+</LinearLayout>

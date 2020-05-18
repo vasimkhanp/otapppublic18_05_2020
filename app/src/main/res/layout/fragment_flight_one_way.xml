@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:scrollbars="none">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mBusConstrain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bus_left_margin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/from"
+        android:textColor="@color/gray_74"
+        android:textSize="@dimen/_10sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/flight_art_width"
+            android:layout_height="@dimen/flight_art_width"
+            android:background="@drawable/ic_flight_from" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etFromCity"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:completionThreshold="1"
+            android:hint="@string/select_city"
+            android:imeOptions="actionNext"
+            android:inputType="text|textNoSuggestions"
+            android:textColor="@color/gray_39"
+            android:textColorHint="@color/gray_39"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bus_left_margin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/to"
+        android:textColor="@color/gray_74"
+        android:textSize="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/flight_art_width"
+            android:layout_height="@dimen/flight_art_width"
+            android:background="@drawable/ic_flight_to" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etToCity"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:completionThreshold="1"
+            android:hint="@string/select_city"
+            android:imeOptions="actionNext"
+            android:inputType="text|textNoSuggestions"
+            android:textColor="@color/gray_39"
+            android:textColorHint="@color/gray_39"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bus_left_margin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/departure"
+        android:textColor="@color/gray_74"
+        android:textSize="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/flight_art_width"
+            android:layout_height="@dimen/flight_art_width"
+            android:background="@drawable/ic_calendar" />
+
+        <EditText
+            android:id="@+id/etDate"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="@string/select_date"
+            android:imeOptions="actionNext"
+            android:textColor="@color/gray_39"
+            android:textColorHint="@color/gray_39"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bus_left_margin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/travellers"
+        android:textColor="@color/gray_74"
+        android:textSize="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/flight_art_width"
+            android:layout_height="@dimen/flight_art_width"
+            android:background="@drawable/ic_flight_traveller" />
+
+        <EditText
+            android:id="@+id/etTravellers"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="@string/select_traveller"
+            android:imeOptions="actionNext"
+            android:textColor="@color/gray_39"
+            android:textColorHint="@color/gray_39"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bus_left_margin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/clas"
+        android:textColor="@color/gray_74"
+        android:textSize="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/flight_art_width"
+            android:layout_height="@dimen/flight_art_width"
+            android:background="@drawable/ic_flight_class" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etEconomy"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:completionThreshold="0"
+            android:hint="@string/select_class"
+            android:imeOptions="actionDone"
+            android:inputType="text|textNoSuggestions"
+            android:textColor="@color/gray_39"
+            android:textColorHint="@color/gray_39"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bus_left_margin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/currency_title"
+        android:textColor="@color/gray_74"
+        android:textSize="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/flight_art_width"
+            android:layout_height="@dimen/flight_art_width"
+            android:background="@drawable/ic_currency" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etCurrency"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:completionThreshold="0"
+            android:hint="@string/select_currency"
+            android:imeOptions="actionDone"
+            android:inputType="text|textNoSuggestions"
+            android:textColor="@color/gray_39"
+            android:textColorHint="@color/gray_39"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSearchFlight"
+        style="@style/FontOpenSansSemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_button_primary"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/search_flight"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+</LinearLayout><!--</android.support.v4.widget.NestedScrollView>-->

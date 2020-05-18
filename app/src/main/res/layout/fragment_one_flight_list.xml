@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_ee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltTopTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/movie_tab_selected" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tvBack"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/flight"
+            android:textColor="@color/movie_tab_selected"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/tvDetails"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/tvBack"
+            android:text="@string/flight"
+            android:textColor="@color/movie_tab_selected"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp">
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+
+                <TextView
+                    android:id="@+id/tvToday"
+                    style="@style/FontOpenSansSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_tab_unselected"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/today"
+                    android:textColor="@color/gray_4f"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvTomorrow"
+                    style="@style/FontOpenSansSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/bg_button_tab_unselected"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/tomorrow"
+                    android:textColor="@color/gray_4f"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvDayAfterTomorrow"
+                    style="@style/FontOpenSansSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/bg_button_tab_unselected"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/day_after_tomorrow"
+                    android:textColor="@color/gray_4f"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvFourthDay"
+                    style="@style/FontOpenSansSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/bg_button_tab_unselected"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/day_after_tomorrow"
+                    android:textColor="@color/gray_4f"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="visible" />
+
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvDeparture"-->
+                <!--style="@style/FontOpenSansSemiBold"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/departure_flight"-->
+                <!--android:textColor="@color/gray_01"-->
+                <!--android:textSize="@dimen/_15sdp" />-->
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/FontOpenSansSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/bg_button_tab_unselected"
+                    android:drawableRight="@drawable/ic_calendar_small"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/date"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_8a" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/lvAirline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tvNoFlight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/msg_no_flight"
+                android:textColor="@color/gray_44"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrFilter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFilters"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_rectangle_gray_19"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+            <TextView
+                android:id="@+id/tvFilter"
+                style="@style/FontOpenSansSemiBold"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_round_rectangle_filter"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/filter"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

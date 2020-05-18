@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lnrContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_cancel"
+            android:backgroundTint="@color/gray_46" />
+
+        <TextView
+            style="@style/FontOpenSansBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fare_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTraveller"
+            style="@style/FontOpenSansSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/fare_details"
+            android:textColor="@color/gray_6f"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/gray_c2" />
+
+        <com.otapp.net.view.NonScrollListView
+            android:id="@+id/lvTicketPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent" />
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/base_fare"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvBaseFare"-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="@string/base_fare"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/_5sdp">-->
+
+        <!--<TextView-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/taxes_fees"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvFeeSurcharge"-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="@string/taxes_fees"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="@dimen/_10sdp"-->
+        <!--android:layout_marginBottom="@dimen/_10sdp"-->
+        <!--android:background="@color/gray_c2" />-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/total"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/_14sdp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvTotal"-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="@string/total"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/_14sdp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/_5sdp">-->
+
+        <!--<TextView-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/add_ons"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvAddOns"-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="@string/add_ons"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/_5sdp">-->
+
+        <!--<TextView-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/convenience_chanrge"-->
+        <!--android:layout_toLeftOf="@id/tvConvenienceCharge"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvConvenienceCharge"-->
+        <!--style="@style/FontOpenSansSemiBold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="@string/total"-->
+        <!--android:textColor="@color/gray_6f"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/gray_d8">
+
+            <TextView
+                android:id="@+id/tvYouPayTitle"
+                style="@style/FontOpenSansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/you_pay"
+                android:textColor="@color/gray_44"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/tvYouPay"
+                style="@style/FontOpenSansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/you_pay"
+                android:textColor="@color/gray_44"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
